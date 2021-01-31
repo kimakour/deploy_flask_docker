@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Predict death event </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style_death.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict death event </h1>
+
+     <!-- Form to enter new data for predictions  -->
+    <form action="{{ url_for('predict')}}"method="POST">
+      <input type="text" name="age_submit" placeholder="age_submit" required="required" /><br>
+      <input type="text" name="anaemia_submit" placeholder="anaemia_submit" required="required" /><br>
+      <input type="text" name="creatinine_phosphokinase_submit" placeholder="creatinine_phosphokinase_submit" required="required" /><br>
+      <input type="text" name="diabetes_submit" placeholder="diabetes_submit" required="required" /><br>
+      <input type="text" name="ejection_fraction_submit" placeholder="ejection_fraction_submit" required="required" /><br>
+      <input type="text" name="high_blood_pressure_submit" placeholder="high_blood_pressure_submit" required="required" /><br>
+      <input type="text" name="platelets_submit" placeholder="platelets_submit" required="required" /><br>
+      <input type="text" name="serum_creatinine_submit" placeholder="serum_creatinine_submit" required="required" /><br>
+      <input type="text" name="serum_sodium_submit" placeholder="serum_sodium_submit" required="required" /><br>
+      <input type="text" name="sex_submit" placeholder="sex_submit" required="required" /><br>
+      <input type="text" name="smoking_submit" placeholder="smoking_submit" required="required" /><br>
+      <input type="text" name="time_submit" placeholder="time_submit" required="required" /><br>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+  
+   
+ </div>
+ {{pred}}
+
+</body>
+</html>

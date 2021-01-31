@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Predict death event </title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./style_death.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict death event </h1>
+   <center>
+  Given the precedent charcateristics , the probability of a death event is equal to : {{ data }}
+
+   <br>
+   <br>
+   <a href='/'>go back to home page</a>
+   </center>
+  
+   
+ </div>
+ {{pred}}
+
+</body>
+</html>
